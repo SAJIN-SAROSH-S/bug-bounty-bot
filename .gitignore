@@ -1,0 +1,32 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment and sensitive credentials
+.env
+*.env
+.env.*
+!.env.example
+
+# Local SQLite databases & scan findings
+*.db
+*.sqlite3
+database/*.db
+
+# Confidential bug bounty scan reports
+reports/*.md
+!reports/sample_report.md
+!reports/.gitkeep
+
+# Logs and Burp files
+*.log
+*.burp
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

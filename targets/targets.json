@@ -1,0 +1,69 @@
+﻿{
+  "programs": [
+    {
+      "name": "Sample Authorized Program",
+      "platform": "bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/sample-program",
+      "automated_scanning_allowed": true,
+      "scope_rating": "4 out of 4",
+      "in_scope": [
+        "example.com",
+        "*.example.com",
+        "api.example.com"
+      ],
+      "out_of_scope": [
+        "blog.example.com",
+        "help.example.com",
+        "attachments.example.com"
+      ],
+      "start_urls": [
+        "https://app.example.com",
+        "https://api.example.com"
+      ],
+      "rewards": {
+        "P1": 5000,
+        "P2": 2000,
+        "P3": 500,
+        "P4": 150
+      },
+      "stats": {
+        "total_rewarded": 120,
+        "avg_payout": 350.0,
+        "validation_time": "~2 weeks"
+      },
+      "targets": [
+        {
+          "name": "app.example.com",
+          "type": "website",
+          "tech": [
+            "React",
+            "Node.js"
+          ]
+        },
+        {
+          "name": "api.example.com",
+          "type": "api",
+          "tech": [
+            "REST",
+            "Express"
+          ]
+        }
+      ],
+      "focus_areas": [
+        "Authentication & Authorization flaws",
+        "Insecure Direct Object References (IDOR)",
+        "Cross-Site Scripting (XSS)",
+        "Cross-Site Request Forgery (CSRF)",
+        "Server-Side Request Forgery (SSRF)",
+        "API Parameter Pollution & Mass Assignment"
+      ],
+      "rules": [
+        "Test only against authorized in-scope assets",
+        "Use designated research accounts and headers",
+        "Do not degrade service or perform DoS/DDoS",
+        "Follow coordinated vulnerability disclosure"
+      ],
+      "notes": "Template configuration for authorized bug bounty research."
+    }
+  ]
+}

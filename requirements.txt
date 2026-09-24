@@ -1,0 +1,16 @@
+# ── Core HTTP / crawling ─────────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# ── AI Report Generation ─────────────────────────────
+anthropic>=0.25.0
+python-dotenv>=1.0.0
+
+# ── Optional: async / faster crawling ────────────────
+# httpx>=0.27.0
+# playwright>=1.44.0   # for JS-heavy sites
+
+# ── Optional: real security scanners ─────────────────
+# python-nmap>=0.7.1
+# dnspython>=2.6.0
